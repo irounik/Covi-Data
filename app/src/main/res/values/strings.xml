@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Covi-Data</string>
+    <string name="get_data">Get Data</string>
+    <string name="graph_image">Graph Image</string>
+    <string name="total">Total</string>
+    <string name="active">Active</string>
+    <string name="numPlaceTaker">####</string>
+    <string name="recovered">Daily Recoveries</string>
+    <string name="rec">Recovered</string>
+    <string name="deaths">Deaths</string>
+    <string name="dd_mm_yyyy_hh_mm_ss_am_pm">DD/MM/YYYY hh:mm:ss AM/PM</string>
+    <string name="total_cases_graph">Total Cases</string>
+    <string name="deaths_graph">Daily Deceased</string>
+    <string name="daily_confirmed">Daily Confirmed</string>
+    <string name="get_graphs">Get Graphs</string>
+</resources>
