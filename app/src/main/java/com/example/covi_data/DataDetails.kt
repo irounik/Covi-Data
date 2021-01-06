@@ -58,5 +58,13 @@ class DataDetails : AppCompatActivity() {
         graph.viewport.maxXAxisSize = testDataArray.length().toDouble()
         graph.viewport.isYAxisBoundsManual = true
         graph.viewport.isXAxisBoundsManual = true
+
+        val gLabel = graph.gridLabelRenderer
+        gLabel.horizontalAxisTitle = "Days"
+        gLabel.verticalAxisTitle = "Cases"
+        gLabel.verticalAxisTitleColor = Color.WHITE
+        gLabel.horizontalAxisTitleColor = Color.WHITE
+        gLabel.verticalAxisTitleTextSize = 48f
+        gLabel.horizontalAxisTitleTextSize = 48f
     }
 }

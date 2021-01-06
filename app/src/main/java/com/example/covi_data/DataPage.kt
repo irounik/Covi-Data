@@ -39,7 +39,7 @@ class DataPage : AppCompatActivity(), AdapterView.OnItemSelectedListener {
             arrayAdapter -> arrayAdapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line)
             spinner.adapter = arrayAdapter
         }
-        spinner.setSelection(Integer.parseInt(id.toString()))
+        spinner.setSelection(id)
         spinner.onItemSelectedListener = this
     }
 

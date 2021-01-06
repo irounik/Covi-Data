@@ -2,8 +2,6 @@ package com.example.covi_data
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
@@ -21,15 +19,18 @@ class MainActivity : AppCompatActivity() {
             R.array.states,
             R.layout.spinner_theme
         ).also{
-            arrayAdapter -> arrayAdapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line)
+            arrayAdapter -> arrayAdapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item)
             spinner.adapter = arrayAdapter
         }
+
+        getDataButton.setOnClickListener {
+            getData()
+        }
     }
-    fun getData(view: View) {
+    fun getData() {
         val intent = Intent(this, DataPage::class.java)
         intent.putExtra("id",spinner.selectedItemPosition)
         intent.putExtra("stateName",spinner.selectedItem.toString())
-
         overridePendingTransition(R.anim.slide_right_to_left,R.anim.slide_left_to_right)
         startActivity(intent)
     }
