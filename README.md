@@ -2,7 +2,7 @@
 Get latest data on COVID-19 cases form all over the India
 
 # Key Keatures:
-  * State-wise as well as all Indai data for COVID-19 Cases
+  * State-wise as well as all India data for COVID-19 Cases
   * API Used: https://api.covid19india.org/data.json
   * Graphs on Total Cases, Daily Active Cases, Recoverd and Deceased
 
