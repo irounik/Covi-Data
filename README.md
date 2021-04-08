@@ -8,6 +8,6 @@ Get latest data on COVID-19 cases form all over the India
 
 ### Screenshots
 
-![Group1](https://user-images.githubusercontent.com/56750020/100743491-5aa0d200-3402-11eb-9114-504747a7444a.png)
+![SS1](https://user-images.githubusercontent.com/56750020/113998513-c4306180-9876-11eb-8b0b-a555e5338f7f.png)
 
-![Graph1](https://user-images.githubusercontent.com/56750020/100744335-abfd9100-3403-11eb-8df0-dbafa55f9dc5.png)
+![Graphs](https://user-images.githubusercontent.com/56750020/113997761-1329c700-9876-11eb-99b0-05b27e8fed04.png)
