@@ -4,16 +4,12 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
-import android.widget.Spinner
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.Request
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 import kotlinx.android.synthetic.main.activity_data_page.*
-import kotlinx.android.synthetic.main.activity_data_page.spinner
 
 class DataPage : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
@@ -41,6 +37,10 @@ class DataPage : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         }
         spinner.setSelection(id)
         spinner.onItemSelectedListener = this
+
+        findViewById<Button>(R.id.getGraphBtn).setOnClickListener {
+            getGraph()
+        }
     }
 
     private fun setDataFromApi(stateName: String?) {
@@ -89,7 +89,7 @@ class DataPage : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         //Null
     }
 
-    fun getGraph(view: View) {
+    private fun getGraph() {
         val intent = Intent(this,DataDetails::class.java)
         startActivity(intent)
     }

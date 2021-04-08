@@ -15,11 +15,11 @@ class MainActivity : AppCompatActivity() {
         val spinner : Spinner = findViewById(R.id.spinner)
 
         ArrayAdapter.createFromResource(
-            this,
-            R.array.states,
-            R.layout.spinner_theme
-        ).also{
-            arrayAdapter -> arrayAdapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item)
+                this,
+                R.array.states,
+                R.layout.spinner_theme
+        ).also { arrayAdapter ->
+            arrayAdapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item)
             spinner.adapter = arrayAdapter
         }
 
@@ -27,12 +27,12 @@ class MainActivity : AppCompatActivity() {
             getData()
         }
     }
-    fun getData() {
+
+    private fun getData() {
         val intent = Intent(this, DataPage::class.java)
-        intent.putExtra("id",spinner.selectedItemPosition)
-        intent.putExtra("stateName",spinner.selectedItem.toString())
-        overridePendingTransition(R.anim.slide_right_to_left,R.anim.slide_left_to_right)
+        intent.putExtra("id", spinner.selectedItemPosition)
+        intent.putExtra("stateName", spinner.selectedItem.toString())
+        overridePendingTransition(R.anim.slide_right_to_left, R.anim.slide_left_to_right)
         startActivity(intent)
     }
-
 }

@@ -13,4 +13,5 @@
     <string name="deaths_graph">Daily Deceased</string>
     <string name="daily_confirmed">Daily Confirmed</string>
     <string name="get_graphs">Get Graphs</string>
+    <string name="logo">logo</string>
 </resources>

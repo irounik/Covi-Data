@@ -1,0 +1,48 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:width="412dp"
+    android:height="870dp"
+    android:viewportWidth="412"
+    android:viewportHeight="870"
+    tools:ignore="VectorRaster">
+  <group>
+    <clip-path
+        android:pathData="M0,0h412v870h-412z"/>
+    <path
+        android:pathData="M0,0h412v870h-412z">
+      <aapt:attr name="android:fillColor">
+        <gradient 
+            android:startY="42.63"
+            android:startX="30.076"
+            android:endY="923.07"
+            android:endX="431.776"
+            android:type="linear">
+          <item android:offset="0" android:color="#FF855FFF"/>
+          <item android:offset="0.402" android:color="#F19581FC"/>
+          <item android:offset="1" android:color="#FF392DE7"/>
+        </gradient>
+      </aapt:attr>
+    </path>
+    <path
+        android:pathData="M76.442,481.61L284.367,448.678c91.355,-14.469 183.285,86.633 205.329,225.817S455.553,938.24 364.198,952.709L156.273,985.641C64.918,1000.11 -27.012,899.009 -49.057,759.825S-14.913,496.079 76.442,481.61Z"
+        android:strokeAlpha="0.18"
+        android:fillColor="#fff"
+        android:fillAlpha="0.18"/>
+    <path
+        android:pathData="M91.442,570.61L299.367,537.678c91.355,-14.469 183.285,86.633 205.329,225.817S470.553,1027.24 379.198,1041.709L171.273,1074.641C79.918,1089.11 -12.012,988.009 -34.057,848.825S0.087,585.079 91.442,570.61Z"
+        android:strokeAlpha="0.18"
+        android:fillColor="#fff"
+        android:fillAlpha="0.18"/>
+    <path
+        android:pathData="M135.442,652.61L343.367,619.678c91.355,-14.469 183.285,86.633 205.329,225.817S514.553,1109.24 423.198,1123.709L215.273,1156.641C123.918,1171.11 31.988,1070.009 9.943,930.825S44.087,667.079 135.442,652.61Z"
+        android:strokeAlpha="0.18"
+        android:fillColor="#fff"
+        android:fillAlpha="0.18"/>
+    <path
+        android:pathData="M170.442,746.291L378.367,713.359c91.355,-14.469 183.285,86.633 205.329,225.817S549.553,1202.921 458.198,1217.39L250.273,1250.322C158.918,1264.791 66.988,1163.69 44.943,1024.506S79.087,760.76 170.442,746.291Z"
+        android:strokeAlpha="0.18"
+        android:fillColor="#fff"
+        android:fillAlpha="0.18"/>
+  </group>
+</vector>

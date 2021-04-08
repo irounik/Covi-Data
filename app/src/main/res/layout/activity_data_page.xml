@@ -1,71 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_sky"
-    tools:layout_editor_absoluteX="16dp"
-    tools:layout_editor_absoluteY="27dp"
-    android:layout_gravity="center">
+    android:layout_gravity="center"
+    android:background="@drawable/ic_background">
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".DataPage">
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_marginHorizontal="16dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/circle_blue"
-        android:autofillHints="All India"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:scrollbarDefaultDelayBeforeFade="300"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.041" />
+        android:layout_height="0dp"
+        android:paddingBottom="24dp"
+        tools:context=".DataPage">
 
-    <TextView
-        android:id="@+id/upToDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:layout_marginBottom="27dp"
-        android:text="@string/dd_mm_yyyy_hh_mm_ss_am_pm"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/total"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
-        app:layout_constraintVertical_bias="1.0" />
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="12dp"
+            android:autofillHints="All India"
+            android:background="@drawable/circle_blue"
+            android:scrollbarDefaultDelayBeforeFade="300"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.041" />
 
-    <TextView
-        android:id="@+id/total"
-        android:layout_width="match_parent"
-        android:layout_height="85dp"
-        android:layout_marginHorizontal="32dp"
-        android:layout_marginTop="44dp"
-        android:background="@drawable/circle_blue"
-        android:text="@string/total"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="32sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
-        app:layout_constraintVertical_bias="0.035" />
+        <TextView
+            android:id="@+id/upToDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="27dp"
+            android:text="@string/dd_mm_yyyy_hh_mm_ss_am_pm"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner"
+            app:layout_goneMarginTop="12dp" />
 
-    <TextView
-        android:id="@+id/totalData"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/circle_blue"
+            android:text="@string/total"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/upToDate"
+            app:layout_constraintVertical_bias="0.035" />
+
+        <TextView
+            android:id="@+id/totalData"
+            android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/numPlaceTaker"
         android:textColor="@color/blue"
@@ -81,17 +75,15 @@
         android:layout_width="match_parent"
         android:layout_height="85dp"
         android:layout_marginHorizontal="32dp"
-        android:layout_marginTop="41dp"
+        android:layout_marginTop="18dp"
         android:background="@drawable/circle_blue"
         android:text="@string/active"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="32sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/total"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/total" />
 
     <TextView
         android:id="@+id/activeData"
@@ -111,24 +103,22 @@
         android:layout_width="match_parent"
         android:layout_height="85dp"
         android:layout_marginHorizontal="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="18dp"
         android:background="@drawable/circle_blue"
         android:text="@string/rec"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="32sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/active"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/active" />
 
     <TextView
         android:id="@+id/recoveredData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/numPlaceTaker"
-        android:textColor="@color/green"
+        android:textColor="#0CDC0C"
         android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="@+id/recovered"
         app:layout_constraintEnd_toEndOf="@+id/recovered"
@@ -141,17 +131,15 @@
         android:layout_width="match_parent"
         android:layout_height="85dp"
         android:layout_marginHorizontal="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="18dp"
         android:background="@drawable/circle_blue"
         android:text="@string/deaths"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="32sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recovered"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/recovered" />
 
     <TextView
         android:id="@+id/deadData"
@@ -167,19 +155,22 @@
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="DuplicateIds" />
 
-    <Button
-        android:layout_width="204dp"
-        android:layout_height="66dp"
-        android:layout_marginHorizontal="64dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/circle_blue"
-        android:onClick="getGraph"
-        android:padding="15dp"
-        android:text="@string/get_graphs"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dead" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/getGraphBtn"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="#7B31FF"
+            android:paddingHorizontal="32dp"
+            android:paddingVertical="18dp"
+            android:text="@string/get_graphs"
+            android:textSize="24sp"
+            app:cornerRadius="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dead" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

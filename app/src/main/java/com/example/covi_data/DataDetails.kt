@@ -48,7 +48,7 @@ class DataDetails : AppCompatActivity() {
             val o = testDataArray.getJSONObject(i)
             val y = o.getString(field).toDouble()
             if (y > max) max = y
-            series.appendData(DataPoint(i.toDouble(), y), true, 500)
+            series.appendData(DataPoint(i.toDouble(), y), true, 1000)
         }
         graph.addSeries(series)
         graph.gridLabelRenderer.gridColor = Color.WHITE
