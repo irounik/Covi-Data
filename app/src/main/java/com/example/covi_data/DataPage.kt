@@ -44,7 +44,7 @@ class DataPage : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     }
 
     private fun setDataFromApi(stateName: String?) {
-        val url = "https://api.covid19india.org/data.json"
+        val url = "https://data.covid19india.org/data.json"
         val queue = Volley.newRequestQueue(this)
         val jsonObjectRequest = JsonObjectRequest(Request.Method.GET, url, null,
                 { response ->
@@ -85,10 +85,7 @@ class DataPage : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         }
     }
 
-    override fun onNothingSelected(parent: AdapterView<*>?) {
-        //Null
-    }
-
+    override fun onNothingSelected(parent: AdapterView<*>?) = Unit
     private fun getGraph() {
         val intent = Intent(this,DataDetails::class.java)
         startActivity(intent)

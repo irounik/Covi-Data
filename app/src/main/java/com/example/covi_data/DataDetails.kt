@@ -21,7 +21,7 @@ class DataDetails : AppCompatActivity() {
     }
 
     private fun setGraphData() {
-        val url = "https://api.covid19india.org/data.json"
+        val url = "https://data.covid19india.org/data.json"
         val queue = Volley.newRequestQueue(this)
         val jsonObjectRequest = JsonObjectRequest(
                 Request.Method.GET, url, null,
@@ -51,20 +51,29 @@ class DataDetails : AppCompatActivity() {
             series.appendData(DataPoint(i.toDouble(), y), true, 1000)
         }
         graph.addSeries(series)
-        graph.gridLabelRenderer.gridColor = Color.WHITE
-        graph.gridLabelRenderer.horizontalLabelsColor = Color.WHITE
-        graph.gridLabelRenderer.verticalLabelsColor = Color.WHITE
-        graph.viewport.maxYAxisSize = max
-        graph.viewport.maxXAxisSize = testDataArray.length().toDouble()
-        graph.viewport.isYAxisBoundsManual = true
-        graph.viewport.isXAxisBoundsManual = true
+        graph.apply {
+            gridLabelRenderer.gridColor = Color.WHITE
+            gridLabelRenderer.horizontalLabelsColor = Color.WHITE
+            gridLabelRenderer.verticalLabelsColor = Color.WHITE
+        }
+
+        graph.viewport.apply {
+            maxYAxisSize = max
+            maxXAxisSize = testDataArray.length().toDouble()
+            isYAxisBoundsManual = true
+            isXAxisBoundsManual = true
+            isScalable = true
+            isScalable = true
+        }
 
         val gLabel = graph.gridLabelRenderer
-        gLabel.horizontalAxisTitle = "Days"
-        gLabel.verticalAxisTitle = "Cases"
-        gLabel.verticalAxisTitleColor = Color.WHITE
-        gLabel.horizontalAxisTitleColor = Color.WHITE
-        gLabel.verticalAxisTitleTextSize = 48f
-        gLabel.horizontalAxisTitleTextSize = 48f
+        gLabel.apply {
+            horizontalAxisTitle = "Days"
+            verticalAxisTitle = "Cases"
+            verticalAxisTitleColor = Color.WHITE
+            horizontalAxisTitleColor = Color.WHITE
+            verticalAxisTitleTextSize = 48f
+            horizontalAxisTitleTextSize = 48f
+        }
     }
 }
